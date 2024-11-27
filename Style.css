@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:wght@500; 600; 700&display=swap');
+  /* *{    */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+body {
+
+
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.card-group {
+
+display: flex;
+gap: 25px;
+}
+.card {
+width: 225px;
+height: 400px;
+border-radius: 16px;
+overflow: hidden;
+position: relative;
+transition: 0.5s;
+cursor: pointer;
+}
+.card img {
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;
+transition: 0.5s;
+}
+.card .layer {
+background: linear-gradient(to top, rgb(250, 250, 250), rgba(0, 0, 0, 0));
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 75%;
+opacity: 0;
+transition: 0.3s;
+}
+.card .info {
+position: absolute;
+bottom: -50%;
+padding: 15px;
+opacity: 0;
+transition: 0.5s bottom, 1.75s opacity;
+}
+.info p {
+
+font-size: 14px;
+margin-top: 3px;
+}
+.info button {
+background: #490CCC;
+border: none;
+padding: 8px 12px;
+font-weight: bold;
+border-radius: 8px;
+margin-top: 8px;
+}
+.card:hover, .card:hover img,
+.card:hover layer {
+transform: scale(1.1);
+}
+.card:hover > .layer {
+opacity: 1;
+}
+.card:hover > .info {
+
+bottom: 0;
+opacity: 1;
+}
+.card-group:hover > .card:not(:hover) {
+filter: blur (5px);
+}
+.dinner {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
+.dinner image{
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out 0.5s;
+}
+.first ul{
+   list-style-type: none;
+   padding: 0px;
+   margin: 0px;
+   overflow: hidden;
+
+}
+.first a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+.first li{
+    float: left;
+
+}
+.first ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.logo{
+    width: 20%;
+    height: 110px;
+
+}
+.txt{
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+.logo img{
+    width: 100%;
+    height: 100% ;
+
+}
+iframe{
+    width: 100%;
+    height: 300px;
+}
